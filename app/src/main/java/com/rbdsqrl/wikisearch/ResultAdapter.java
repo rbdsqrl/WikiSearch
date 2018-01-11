@@ -66,6 +66,7 @@ public class ResultAdapter extends BaseAdapter {
         } else {
             infoHolder = (InfoHolder) customView.getTag();
         }
+        infoHolder.ivThumbnail.setImageResource(R.drawable.ic_none);
         infoHolder.position = position;
         infoHolder.tvDescription.setText(searchResults.get(position).getResultDescription());
         infoHolder.tvTitle.setText(searchResults.get(position).getResultTitle());
